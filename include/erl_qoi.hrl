@@ -1,0 +1,8 @@
+-record(qoi_header, {width :: integer(), height :: integer(), channels :: integer(), colorspace :: integer()}).
+-record(qoi_pixel, {r :: byte(), g :: byte(), b :: byte(), a :: byte()}).
+-record(qoi_op_rgb, {r :: byte(), g :: byte(), b :: byte(), a :: byte()}).
+-record(qoi_op_rgba, {r :: byte(), g :: byte(), b :: byte(), a :: byte()}).
+-record(qoi_op_index, {index :: integer()}).
+-record(qoi_op_diff, {dr :: byte(), dg :: byte(), db :: byte()}).
+-record(qoi_op_luma, {dg :: byte(), drg :: byte(), dbg :: byte()}).
+-record(qoi_op_run, {run :: byte()}).
